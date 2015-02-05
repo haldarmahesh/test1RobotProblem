@@ -1,11 +1,6 @@
 require "surveyor/version"
+require 'surveyor/application'
 require 'surveyor/command_parser'
-require 'surveyor/start_grid_parser'
 require 'surveyor/robot'
-
-
-
-
-module Surveyor
-  # Your code goes here...
-end
+require 'surveyor/start_grid_parser'
+require 'surveyor/coordinate_parser'

@@ -5,7 +5,7 @@ class CommandParser
     @commands = []   
   end
   def parse(command)
-    command_array = command.split(/\n/)
+    @commands = command.split(/\n/)
   end
 
 end
