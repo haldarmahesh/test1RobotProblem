@@ -7,6 +7,3 @@ class RobotInstructionParser
     @robot_instruction = instruction.split(' ')
   end
 end
-
-ob = RobotInstructionParser.new
-puts ob.parse("LEFT MOVE LEFT MOVE LEFT RIGHT")

@@ -10,7 +10,7 @@ class Application
       user_input = STDIN.gets
       @commands = command_parser.parse(user_input)
       
-      # @coordinates_array = @coord.parse(@commands[0])
+      @coordinates_array = @coord.parse(@commands[0])
 
       puts @coord.class
   end
