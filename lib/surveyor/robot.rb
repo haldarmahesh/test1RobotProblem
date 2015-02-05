@@ -1,6 +1,6 @@
 #this sets and returns attributes of a robot like orientation, moves and curent coordinate
 class Robot
-  attr_reader :position
+  attr_reader :position, :orientation
   def initialize
     @orientation = ""
     @position = [0,0]
@@ -47,5 +47,5 @@ class Robot
     end  
     @position
   end
-
+    
 end
