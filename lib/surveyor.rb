@@ -5,3 +5,5 @@ require 'surveyor/robot'
 require 'surveyor/start_grid_parser'
 require 'surveyor/coordinate_parser'
 require 'surveyor/robot_instruction_parser'
+require 'surveyor/land'
+

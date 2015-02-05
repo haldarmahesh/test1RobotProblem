@@ -17,7 +17,6 @@ class Robot
   end
   def change_orientation(direction)
     
-    # hash = Hash[@direction_array.map.with_index.to_a]  
     current_index = @direction_array.index(@orientation)
 
     case direction
