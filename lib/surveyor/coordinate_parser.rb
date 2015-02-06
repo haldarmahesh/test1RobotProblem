@@ -6,6 +6,5 @@ class CoordinateParser
   end
   def parse(coordinate)
     @coordinate = coordinate.split(" ").map {|i| Integer(i) }
-    
   end
 end

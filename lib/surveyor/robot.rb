@@ -1,34 +1,30 @@
 #this sets and returns attributes of a robot like orientation, moves and curent coordinate
 class Robot
   attr_reader :position, :orientation
-  def initialize
-    @orientation = ""
-    @position = [0,0]
+  
+  def initialize(x, y, orientation)
+    @orientation = orientation
+    @position = [x, y]
     @direction_array = ["NORTH", "EAST", "SOUTH", "WEST"]
   end
 
-  def set_position(x, y)
-    @position[0] = x
-    @position[1] = y
-    @position
-  end
-  def set_orientation(orientation)
-    @orientation = orientation
-  end
-  def change_orientation(direction)
+  def turn_left
     
     current_index = @direction_array.index(@orientation)
-
-    case direction
-    
-    when "LEFT"
-      current_index = (current_index - 1 ) % 4  
-    when "RIGHT"
-      current_index = (current_index + 1 ) % 4
-    end
+    current_index = (current_index - 1 ) % 4
     @orientation = @direction_array[current_index]
     return @orientation
   end
+
+  def turn_right
+    
+    current_index = @direction_array.index(@orientation)
+    current_index = (current_index + 1 ) % 4
+    @orientation = @direction_array[current_index]
+    return @orientation
+  end
+  
+
   def move
    
     case @orientation
